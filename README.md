@@ -2,28 +2,40 @@
 This is a new deep learning based method for miRNA target prediction
 
 1. About the method
+
 I have developed a miRNA target prediction method in which hybrid model of CNN and Tranformer are implemented.
 
 2. Data collection and processing
+
 The original data is completely copied from article "miRAW: A deep learning-based approach to predict microRNA targets by analyzing whole microRNA transcripts".
+
 
       a. Train Dataset: ~/PLOSComb/Data/CrossVal/RelaxedPW60_14K_35K/set_{i}_train.csv, i∈[0,9]
       b. Test Dataset (site level): ~/PLOSComb/Data/CrossVal/RelaxedPW60_14K_35K/set_{i}_test.csv, i∈[0,9]
       c. Test Dataset (gene level): ~/PLOSComb/Data/TestData/balanced10/randomLeveragedTestSplit_{i}.csv, i∈[0,9]
 
+
 Details of data set division: Due to the imbalance of the samples in the experimental data, the original text down-sampled the positive samples and grabbed the possible binding sites in the negative sample sequence. Finally, 33142 positive samples and 32284 negative samples were obtained for training.  More details on data processing can be obtained in the original text
+
 
 Attention:
       The input data of the model is a pair of miRNA::mRNA sequences, where the length of the mRNA is 40nt and the length is fixed. 
 Therefore, it is necessary to manually cut the mRNA sequence obtained at the gene level. Different cutting pieces from the same mRNA sequence form samples from the unique miRNA. When judging the label of miRNA and mRNA, the cut samples are OR relationship with each other.
-      
+ 
+ 
 
 3. Model construction
+
+
 Input (miRNA_sequence+padding+mRNA_sequenc+padding) -> Embedding -> 1dcnn -> ReLU -> Maxpooling -> Transfomer(Only Encoder) -> Fully connected layer(2 layers) -> ReLU -{SoftMax}-> probability of 0/1 class
+
+
 
 4. Model evaluation
 
+
 =================Compare with miRAW=================
+
 
 a. Site level (10 Fold Cross Val, 14000 sample, pos : neg = 1:1)	
 
@@ -34,7 +46,9 @@ b. Gene level (548 pos, 548 neg; 10 Fold Cross Val)
 ![image](https://user-images.githubusercontent.com/49811864/130411180-cf923ee0-f29d-4e7b-80e9-a8db376a0fc3.png)
 
 
+
 =================Compare with benchmark=================
+
 
 a. genelevel_10 fold_deepTarget:
 
@@ -43,6 +57,7 @@ a. genelevel_10 fold_deepTarget:
 b. genelevel_10 fold_new model 
 
 ![image](https://user-images.githubusercontent.com/49811864/130411550-618c2552-d463-46b7-8780-14d8c753c5b2.png)
+
 
 
 5. conclusion
