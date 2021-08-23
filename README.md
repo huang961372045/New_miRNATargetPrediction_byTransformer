@@ -24,18 +24,24 @@ Input (miRNA_sequence+padding+mRNA_sequenc+padding) -> Embedding -> 1dcnn -> ReL
 4. Model evaluation
 
 =================Compare with miRAW=================
-a. Site level (10 Fold Cross Val, 14000 sample, pos : neg = 1:1)													
+
+a. Site level (10 Fold Cross Val, 14000 sample, pos : neg = 1:1)	
+
 ![image](https://user-images.githubusercontent.com/49811864/130411016-9b76f7d6-4697-4267-976e-07584433e118.png)
 
-b. Gene level (548 pos, 548 neg; 10 Fold Cross Val)					
+b. Gene level (548 pos, 548 neg; 10 Fold Cross Val)		
+
 ![image](https://user-images.githubusercontent.com/49811864/130411180-cf923ee0-f29d-4e7b-80e9-a8db376a0fc3.png)
 
 
 =================Compare with benchmark=================
-a. genelevel_10 fold_deepTarget: 
+
+a. genelevel_10 fold_deepTarget:
+
 ![image](https://user-images.githubusercontent.com/49811864/130411427-31dff93d-3290-403d-970f-ef5875501c40.png)
 
 b. genelevel_10 fold_new model 
+
 ![image](https://user-images.githubusercontent.com/49811864/130411550-618c2552-d463-46b7-8780-14d8c753c5b2.png)
 
 5. conclusion
