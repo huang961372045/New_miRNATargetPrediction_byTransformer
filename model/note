@@ -1,0 +1,12 @@
+model parameter
+test_ratio=0.2
+iteration=100
+embed_size=6
+dmodel=320
+n_layer=2
+batch_size=64
+lr=0.001
+lr_decay=0.1
+weight_decay=0.001
+decay_interval=100
+dropout=0.1
