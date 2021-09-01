@@ -27,7 +27,7 @@ Therefore, it is necessary to manually cut the mRNA sequence obtained at the gen
 3. Model construction
 
 
-Input (miRNA_sequence+padding+mRNA_sequenc+padding) -> Embedding -> 1dcnn -> ReLU -> Maxpooling -> Transfomer(Only Encoder) -> Fully connected layer(2 layers) -> ReLU -{SoftMax}-> probability of 0/1 class
+Secret (CNN+Transformer)
 
 
 
