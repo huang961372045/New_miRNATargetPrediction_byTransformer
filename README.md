@@ -1,7 +1,9 @@
 # New miRNA Target Prediction method based on deep learning model 
 
 
-## background：
+## 1. background：
+
+### (1) definition and application of miRNA
 
 microRNAs (miRNAs) are endogenous to 22 nt RNAs that combine target genes to cut targeted genes or inhibit the translation of targeted genes.
 
@@ -15,6 +17,8 @@ miRNA is a chain randomly selected in the body by the precursor of the hairpin s
 ![image](https://user-images.githubusercontent.com/49811864/137681005-27d00d81-dfee-45a2-aad1-308064e00a57.png)
 
 (Sempere L F, Azmi A S, Moore A. microRNA‐based diagnostic and therapeutic applications in cancer medicine[J]. Wiley Interdisciplinary Reviews: RNA, 2021: e1662.)
+
+### （2）feature of miRNA-gene combination
 
 There are two main problems that need to be solved in the prediction of miRNA targets, gene level and site level. The problem that Gene level needs to solve is which gene's mRNA is targeted and regulates its expression, and the problem that site level needs to solve is where to target this mRNA sequence. It is necessary to achieve some precision by predicting the site level in order to predict whether miRNA regulates gene expression.
 
@@ -31,7 +35,13 @@ In addition to seed regions, miRNA target genes have other features, such as bin
 
 (Schäfer M, Ciaudo C. Prediction of the miRNA interactome–Established methods and upcoming perspectives[J]. Computational and structural biotechnology journal, 2020, 18: 548-557.)
 
+### （3）Existing Method
 
+![image](https://user-images.githubusercontent.com/49811864/137683010-2a41ff48-3131-4d6c-9427-c3c383553d9b.png)
+
+### (4) Goal
+
+Using RNA sequence as input to establish a deep learning model, automatically extract hidden features to predict potential sites, and establishing a more accurate model to improve accuracy of gene level prediction.
 
 
 1. About the method
