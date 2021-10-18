@@ -41,16 +41,18 @@ In addition to seed regions, miRNA target genes have other features, such as bin
 
 ### (4) Goal
 
-Using RNA sequence as input to establish a deep learning model, automatically extract hidden features to predict potential sites, and establishing a more accurate model to improve accuracy of gene level prediction.
+1) Problem : Human-designed features have the limitation because it is based on the cognition of existing miRNA-gene bind and single deep learning model that predicts accuracy at the site level of negative samples is not high
+
+2) Solution: Using RNA sequence as input to establish a deep learning model, automatically extract hidden features to predict potential sites, and establishing a more accurate model to improve accuracy of gene level prediction.
 
 
-1. About the method
+## 2. method：
 
-This is a new deep learning based method for miRNA target prediction.
+### (1) Data collection and processing
 
-2. Data collection and processing
+The original data is completely copied from article "miRAW: A deep learning-based approach to predict microRNA targets by analyzing whole microRNA transcripts" (Pla A, Zhong X, Rayner S. miRAW: A deep learning-based approach to predict microRNA targets by analyzing whole microRNA transcripts[J]. PLoS computational biology, 2018, 14(7): e1006185).
 
-The original data is completely copied from article "miRAW: A deep learning-based approach to predict microRNA targets by analyzing whole microRNA transcripts".
+![image](https://user-images.githubusercontent.com/49811864/137684431-0b12794e-21fd-4c8a-ba44-10248d079063.png)
 
 
       a. Train Dataset: ~/PLOSComb/Data/CrossVal/RelaxedPW60_14K_35K/set_{i}_train.csv, i∈[0,9]
@@ -61,20 +63,20 @@ The original data is completely copied from article "miRAW: A deep learning-base
 Details of data set division: Due to the imbalance of the samples in the experimental data, the original text down-sampled the positive samples and grabbed the possible binding sites in the negative sample sequence. Finally, 33142 positive samples and 32284 negative samples were obtained for training.  More details on data processing can be obtained in the original text
 
 
+
+
 Attention:
       The input data of the model is a pair of miRNA::mRNA sequences, where the length of the mRNA is 40nt and the length is fixed. 
 Therefore, it is necessary to manually cut the mRNA sequence obtained at the gene level. Different cutting pieces from the same mRNA sequence form samples from the unique miRNA. When judging the label of miRNA and mRNA, the cut samples are OR relationship with each other.
  
  
 
-3. Model construction
+### (2) Model construction
+
+Transformer-based
 
 
-Secret (CNN+Transformer)
-
-
-
-4. Model evaluation
+### (3) Model evaluation
 
 
 =================Compare with miRAW=================
