@@ -15,6 +15,25 @@ miRNA is a chain randomly selected in the body by the precursor of the hairpin s
 ![image](https://user-images.githubusercontent.com/49811864/137681005-27d00d81-dfee-45a2-aad1-308064e00a57.png)
 Sempere L F, Azmi A S, Moore A. microRNA‐based diagnostic and therapeutic applications in cancer medicine[J]. Wiley Interdisciplinary Reviews: RNA, 2021: e1662.
 
+There are two main problems that need to be solved in the prediction of miRNA targets, gene level and site level. The problem that Gene level needs to solve is which gene's mRNA is targeted and regulates its expression, and the problem that site level needs to solve is where to target this mRNA sequence. It is necessary to achieve some precision by predicting the site level in order to predict whether miRNA regulates gene expression.
+
+Through the study of miRNA targeting mechanisms from the last century, different species of miRNA evolved in a conservative region, in miRNA 5' to 3' ends 2 to 8 base lengths for a sequence of 7 nucleotides. This sequence, known as the seed region, has a pre-determined role in the miRNA regulation gene, and its sequence must be combined to mRNA in order to play a role in regulating gene expression. Experiments have shown that the seed region of miRNA has two kinds of rule matching and non-rule matching. Rule matching is a match that humans find to have certain rules to follow, rather than non-rule matching is a general term for a series of matches that appear mismatched, swollen, misaligned, etc. in the match within the seed region.
+rule matching：8-mer, 7-mer-m8, 7-mer-A1, 6-mer, 6-mer-A1, offset-7-mer, offset-6-mer
+![image](https://user-images.githubusercontent.com/49811864/137681635-62c0bbe4-e924-44f1-a757-bc5d365a524a.png)
+Ellwanger D C, Büttner F A, Mewes H W, et al. The sufficient minimal set of miRNA seed types[J]. Bioinformatics, 2011, 27(10): 1346-1350.
+![image](https://user-images.githubusercontent.com/49811864/137681803-2904a950-1fcd-4976-9c0b-0939011ba2a2.png)
+
+In addition to seed regions, miRNA target genes have other characteristics, such as binding free energy, the degree of 13-16 bit matching, the sequence conservativeness of miRNA, the exposure of the target point, and so on.
+
+![image](https://user-images.githubusercontent.com/49811864/137681821-6f076980-9930-4dfb-b989-3be787c77a52.png)
+Schäfer M, Ciaudo C. Prediction of the miRNA interactome–Established methods and upcoming perspectives[J]. Computational and structural biotechnology journal, 2020, 18: 548-557.
+![image](https://user-images.githubusercontent.com/49811864/137681831-9b8c4164-7e11-432c-b2c9-d379da369cc1.png)
+
+
+
+
+
+
 
 
 
