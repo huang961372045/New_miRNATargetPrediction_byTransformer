@@ -90,17 +90,17 @@ In gene level testing, the specificity score has been improved, which might to s
 
 #### Compare with other deep learning mehods deepTarget and miTAR
 (deepTarget: Lee B. Deep Learning-Based microRNA Target Prediction Using Experimental Negative Data[J]. IEEE Access, 2020, 8: 197908-197916.; Gu T, Zhao X, Barbazuk W B, et al. ; miTAR: miTAR: a hybrid deep learning-based approach for predicting miRNA targets[J]. BMC bioinformatics, 2021, 22(1): 1-16.)
-a. genelevel_10 fold_deepTarget:
+###### a. genelevel_10 fold_deepTarget:
 
 ![image](https://user-images.githubusercontent.com/49811864/130411427-31dff93d-3290-403d-970f-ef5875501c40.png)
 
 
-b. genelevel_10 fold_new model 
+###### b. genelevel_10 fold_new model 
 
 ![image](https://user-images.githubusercontent.com/49811864/130411550-618c2552-d463-46b7-8780-14d8c753c5b2.png)
 
 
-c. New model compare with deepTarget and miTAR
+###### c. New model compare with deepTarget and miTAR
 
 ![image](https://user-images.githubusercontent.com/49811864/137686843-d951ac43-1fbe-42a0-9fe8-e0611abe950e.png)
 
