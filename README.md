@@ -1,17 +1,35 @@
-# New_miRNATargetPrediction_byTransformer
-This is a new deep learning based method for miRNA target prediction
+# New miRNA Target Prediction method based on deep learning model 
 
 
-background：
+## background：
 
-microRNAs (miRNAs) are endogenous to 22 nt RNAs that combine target genes to cut targeted genes or inhibit the translation of targeted genes
-![image](https://user-images.githubusercontent.com/49811864/137680119-0627af8f-1d75-4f62-91f1-ec2d2e262727.png)
+microRNAs (miRNAs) are endogenous to 22 nt RNAs that combine target genes to cut targeted genes or inhibit the translation of targeted genes.
+
+miRNA plays an important role in gene expression in the human body, including regulating metabolism, cell proliferation, immune system activation and other functions.
+
+![image](https://user-images.githubusercontent.com/49811864/137680522-344237c9-b6f8-4aff-beea-075a38cc45e2.png) 
+source：https://interna-technologies.com/
+
+miRNA is a chain randomly selected in the body by the precursor of the hairpin structure to bind to the AGO representative, and then target gene to regulate gene expression, there are many applications for the biological function of miRNA, such as biomarkers for early cancer detection, patient recruitment and treatment options. In addition, miRNA also has the potential for new drugs called personalized treatment of cancer patients. In these applications, the key is to find the target of miRNA, so it is important to accurately predict the target gene of miRNA.
+
+![image](https://user-images.githubusercontent.com/49811864/137681005-27d00d81-dfee-45a2-aad1-308064e00a57.png)
+Sempere L F, Azmi A S, Moore A. microRNA‐based diagnostic and therapeutic applications in cancer medicine[J]. Wiley Interdisciplinary Reviews: RNA, 2021: e1662.
+
+
+
+
+
+
+
+
+
+
 
 
 
 1. About the method
 
-I have developed a miRNA target prediction method in which hybrid model of CNN and Tranformer are implemented.
+This is a new deep learning based method for miRNA target prediction.
 
 2. Data collection and processing
 
