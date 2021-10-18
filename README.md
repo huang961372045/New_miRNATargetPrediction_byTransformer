@@ -62,6 +62,7 @@ The original data is completely copied from article "miRAW: A deep learning-base
 
 Details of data set division: Due to the imbalance of the samples in the experimental data, the original text down-sampled the positive samples and grabbed the possible binding sites in the negative sample sequence. Finally, 33142 positive samples and 32284 negative samples were obtained for training.  More details on data processing can be obtained in the original text
 
+![image](https://user-images.githubusercontent.com/49811864/137685362-4bfa7bbb-cc28-4ba3-8d70-85da2f145edf.png)
 
 
 
@@ -78,23 +79,19 @@ Transformer-based
 
 ### (3) Model evaluation
 
-
-=================Compare with miRAW=================
-
+#### Compare with miRAW
+(miRAW: Pla A, Zhong X, Rayner S. miRAW: A deep learning-based approach to predict microRNA targets by analyzing whole microRNA transcripts[J]. PLoS computational biology, 2018, 14(7): e1006185)
 
 a. Site level (10 Fold Cross Val, 14000 sample, pos : neg = 1:1)	
 
-![image](https://user-images.githubusercontent.com/49811864/130411016-9b76f7d6-4697-4267-976e-07584433e118.png)
+![image](https://user-images.githubusercontent.com/49811864/137686356-9c8b7fd6-80a4-4325-b6e3-e88458ed926c.png)
 
 b. Gene level (548 pos, 548 neg; 10 Fold Cross Val)		
 
 ![image](https://user-images.githubusercontent.com/49811864/130411180-cf923ee0-f29d-4e7b-80e9-a8db376a0fc3.png)
 
-
-
-=================Compare with benchmark=================
-
-
+#### Compare with other deep learning mehods deepTarget and miTAR
+(deepTarget: Lee B. Deep Learning-Based microRNA Target Prediction Using Experimental Negative Data[J]. IEEE Access, 2020, 8: 197908-197916.; Gu T, Zhao X, Barbazuk W B, et al. ; miTAR: miTAR: a hybrid deep learning-based approach for predicting miRNA targets[J]. BMC bioinformatics, 2021, 22(1): 1-16.)
 a. genelevel_10 fold_deepTarget:
 
 ![image](https://user-images.githubusercontent.com/49811864/130411427-31dff93d-3290-403d-970f-ef5875501c40.png)
