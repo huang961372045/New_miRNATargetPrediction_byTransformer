@@ -1,6 +1,14 @@
 # New_miRNATargetPrediction_byTransformer
 This is a new deep learning based method for miRNA target prediction
 
+
+background：
+
+microRNAs (miRNAs) are endogenous to 22 nt RNAs that combine target genes to cut targeted genes or inhibit the translation of targeted genes
+![image](https://user-images.githubusercontent.com/49811864/137680119-0627af8f-1d75-4f62-91f1-ec2d2e262727.png)
+
+
+
 1. About the method
 
 I have developed a miRNA target prediction method in which hybrid model of CNN and Tranformer are implemented.
