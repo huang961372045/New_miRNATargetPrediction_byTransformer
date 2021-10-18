@@ -13,34 +13,23 @@ source：https://interna-technologies.com/
 miRNA is a chain randomly selected in the body by the precursor of the hairpin structure to bind to the AGO representative, and then target gene to regulate gene expression, there are many applications for the biological function of miRNA, such as biomarkers for early cancer detection, patient recruitment and treatment options. In addition, miRNA also has the potential for new drugs called personalized treatment of cancer patients. In these applications, the key is to find the target of miRNA, so it is important to accurately predict the target gene of miRNA.
 
 ![image](https://user-images.githubusercontent.com/49811864/137681005-27d00d81-dfee-45a2-aad1-308064e00a57.png)
-Sempere L F, Azmi A S, Moore A. microRNA‐based diagnostic and therapeutic applications in cancer medicine[J]. Wiley Interdisciplinary Reviews: RNA, 2021: e1662.
+
+(Sempere L F, Azmi A S, Moore A. microRNA‐based diagnostic and therapeutic applications in cancer medicine[J]. Wiley Interdisciplinary Reviews: RNA, 2021: e1662.)
 
 There are two main problems that need to be solved in the prediction of miRNA targets, gene level and site level. The problem that Gene level needs to solve is which gene's mRNA is targeted and regulates its expression, and the problem that site level needs to solve is where to target this mRNA sequence. It is necessary to achieve some precision by predicting the site level in order to predict whether miRNA regulates gene expression.
 
 Through the study of miRNA targeting mechanisms from the last century, different species of miRNA evolved in a conservative region, in miRNA 5' to 3' ends 2 to 8 base lengths for a sequence of 7 nucleotides. This sequence, known as the seed region, has a pre-determined role in the miRNA regulation gene, and its sequence must be combined to mRNA in order to play a role in regulating gene expression. Experiments have shown that the seed region of miRNA has two kinds of rule matching and non-rule matching. Rule matching is a match that humans find to have certain rules to follow, rather than non-rule matching is a general term for a series of matches that appear mismatched, swollen, misaligned, etc. in the match within the seed region.
 rule matching：8-mer, 7-mer-m8, 7-mer-A1, 6-mer, 6-mer-A1, offset-7-mer, offset-6-mer
+
 ![image](https://user-images.githubusercontent.com/49811864/137681916-1d0c469e-750b-43e8-b088-5bfc403e2460.png)
-Ellwanger D C, Büttner F A, Mewes H W, et al. The sufficient minimal set of miRNA seed types[J]. Bioinformatics, 2011, 27(10): 1346-1350.
+
+(Ellwanger D C, Büttner F A, Mewes H W, et al. The sufficient minimal set of miRNA seed types[J]. Bioinformatics, 2011, 27(10): 1346-1350.)
 
 In addition to seed regions, miRNA target genes have other features, such as binding free energy, the degree of 13-16 bit matching, the sequence conservativeness of miRNA, the exposure of the target point, and so on.
 
 ![image](https://user-images.githubusercontent.com/49811864/137681821-6f076980-9930-4dfb-b989-3be787c77a52.png)
-Schäfer M, Ciaudo C. Prediction of the miRNA interactome–Established methods and upcoming perspectives[J]. Computational and structural biotechnology journal, 2020, 18: 548-557.
-![image](https://user-images.githubusercontent.com/49811864/137681831-9b8c4164-7e11-432c-b2c9-d379da369cc1.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+(Schäfer M, Ciaudo C. Prediction of the miRNA interactome–Established methods and upcoming perspectives[J]. Computational and structural biotechnology journal, 2020, 18: 548-557.)
 
 
 
