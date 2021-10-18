@@ -82,13 +82,11 @@ Transformer-based
 #### Compare with miRAW
 (miRAW: Pla A, Zhong X, Rayner S. miRAW: A deep learning-based approach to predict microRNA targets by analyzing whole microRNA transcripts[J]. PLoS computational biology, 2018, 14(7): e1006185)
 
-a. Site level (10 Fold Cross Val, 14000 sample, pos : neg = 1:1)	
+Site level (10 Fold Cross Val, 14000 sample, pos : neg = 1:1)	and Gene level (548 pos, 548 neg; 10 Fold Cross Val)	
 
 ![image](https://user-images.githubusercontent.com/49811864/137686356-9c8b7fd6-80a4-4325-b6e3-e88458ed926c.png)
 
-b. Gene level (548 pos, 548 neg; 10 Fold Cross Val)		
-
-![image](https://user-images.githubusercontent.com/49811864/130411180-cf923ee0-f29d-4e7b-80e9-a8db376a0fc3.png)
+In gene level testing, the specificity score has been improved, which might to solve the problem of inaccurate prediction of gene level negative samples in real-world problems.
 
 #### Compare with other deep learning mehods deepTarget and miTAR
 (deepTarget: Lee B. Deep Learning-Based microRNA Target Prediction Using Experimental Negative Data[J]. IEEE Access, 2020, 8: 197908-197916.; Gu T, Zhao X, Barbazuk W B, et al. ; miTAR: miTAR: a hybrid deep learning-based approach for predicting miRNA targets[J]. BMC bioinformatics, 2021, 22(1): 1-16.)
@@ -96,18 +94,25 @@ a. genelevel_10 fold_deepTarget:
 
 ![image](https://user-images.githubusercontent.com/49811864/130411427-31dff93d-3290-403d-970f-ef5875501c40.png)
 
+
 b. genelevel_10 fold_new model 
 
 ![image](https://user-images.githubusercontent.com/49811864/130411550-618c2552-d463-46b7-8780-14d8c753c5b2.png)
 
 
-5. Variant model valuation and selection of Hyperparameters
+c. New model compare with deepTarget and miTAR
+
+![image](https://user-images.githubusercontent.com/49811864/137686843-d951ac43-1fbe-42a0-9fe8-e0611abe950e.png)
+
+The new model is the most accurate in 10-mer-m7, possibly because the matching pattern is relatively high in the human body 
+
+## 3. Variant model valuation and selection of Hyperparameters
 
 
-6. Case study
+## 4. Case study
 
 
-7. conclusion
+## 5. conclusion
 
 In this study, my model followed miRAW's article rules and used its data to achieve better results. The key structure of the model is the feature extractor Transformer of which role is to allow the model to selectively pay attention to the key information. In this case, it is the sequence interaction information between miRNA and mRNA. 
 
@@ -116,6 +121,6 @@ The reason lies in two points. The first method of artificially segmenting the g
 
 In addition, there is room for improvement in the construction of the model. The first is input. The sine and cosine information added to the Transformer can distinguish the same nucleotide in different positions, but it lacks the distinction between miRNA and mRNA.
 
-8. Discussion
+## 6. Discussion
  
 The next step is to try out three directions. The first is to try Multi-Instance Learning. The training data uses gene-level data and cuts it by my rules. The purpose is to train at the gene level to predict at the gene level; The second point is to change the input method. Use the full-length mRNA sequence without additional cutting; the third point, build a new model, first use the miRNA sequence to input into the current model to get the probability value P1, and then only use the mRNA sequence to input into the current model to get the probability value P2. Combined values of P1 and P2 decide the predicted label of the model. The purpose is to detect whether the training set is biased.
