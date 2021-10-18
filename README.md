@@ -106,10 +106,10 @@ In gene level testing, the specificity score has been improved, which might to s
 
 The new model is the most accurate in 10-mer-m7, possibly because the matching pattern is relatively high in the human body 
 
-## 3. Variant model valuation and selection of Hyperparameters
+## 3. variant model valuation and selection of Hyperparameters (next plan)
 
 
-## 4. Case study
+## 4. case study (next plan)
 
 
 ## 5. conclusion
@@ -121,6 +121,13 @@ The reason lies in two points. The first method of artificially segmenting the g
 
 In addition, there is room for improvement in the construction of the model. The first is input. The sine and cosine information added to the Transformer can distinguish the same nucleotide in different positions, but it lacks the distinction between miRNA and mRNA.
 
-## 6. Discussion
+## 6. discussion
  
 The next step is to try out three directions. The first is to try Multi-Instance Learning. The training data uses gene-level data and cuts it by my rules. The purpose is to train at the gene level to predict at the gene level; The second point is to change the input method. Use the full-length mRNA sequence without additional cutting; the third point, build a new model, first use the miRNA sequence to input into the current model to get the probability value P1, and then only use the mRNA sequence to input into the current model to get the probability value P2. Combined values of P1 and P2 decide the predicted label of the model. The purpose is to detect whether the training set is biased.
+
+## 7. future
+
+### (1) Comparing different cutting methods to obtain the conservativeness of the site sequence and multi-sequence comparison (exmple: use MSA as a new word embedding method)
+### (2) Try to migrate the learning model to siRNA and lincRNA
+### (3) Compare the difference between the targeting mechanism of human and that of experimental animals
+
