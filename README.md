@@ -1,5 +1,24 @@
 # New miRNA Target Prediction method based on deep learning model 
 
+## Introdution
+
+microRNAs (miRNAs) are endogenous to 22 nt RNAs that combine target genes to cut targeted genes or inhibit
+the translation of targeted genes. In addition to the original role of regulating gene expression in the body,
+miRNA currently has many application scenarios, such as being used as a biomarker for early cancer diagnosis. In
+the future, miRNa may be used as a personalized medicine to treat cancer, so accurate prediction of miRNA
+targets is of great significance.
+
+Traditional miRNA target prediction methods based on artificial rules use existing binding modes for prediction,
+which limits the model's ability to predict potential targets or non-classical matching targets. In order to solve this
+problem, machine learning-based methods that take the original RNA sequence as input are gradually being used.
+However, the existing machine learning methods have too high false positives because the model has no
+generalization ability. 
+
+This project uses small sample data and builds an interpretable model-CNN+Bert. The model results show that
+this model is superior to the existing methods and alleviates the problem of excessive false positives. In the
+process of establishing the model, the characteristics of the Transformer model were fully considered, and the
+Encoder structure was used to effectively learn the base complementary pairing relationship between the miRNA
+and the target gene.
 
 ## 1. background：
 
