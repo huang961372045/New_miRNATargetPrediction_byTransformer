@@ -93,7 +93,7 @@ Therefore, it is necessary to manually cut the mRNA sequence obtained at the gen
 
 ### (2) Model construction
 
-Transformer-based
+1DCNN-Transformer
 
 
 ### (3) Model evaluation
@@ -125,10 +125,14 @@ In gene level testing, the specificity score has been improved, which might to s
 
 The new model is the most accurate in 10-mer-m7, possibly because the matching pattern is relatively high in the human body 
 
-## 3. variant model valuation and selection of Hyperparameters (next plan)
+## 3. ablation study
+![image](https://user-images.githubusercontent.com/49811864/156479568-072fa165-9012-4aef-b49a-ba75e9eaa2fe.png)
+![image](https://user-images.githubusercontent.com/49811864/156479598-8f6a54e4-fed3-44a8-a32b-d39f89012693.png)
 
 
 ## 4. case study (next plan)
+![image](https://user-images.githubusercontent.com/49811864/156479623-f9fac6ca-dbe9-4acc-99dc-eeed0e25f596.png)
+![image](https://user-images.githubusercontent.com/49811864/156479653-9ee69b6f-ee97-493a-b6ba-143e7670b08a.png)
 
 
 ## 5. conclusion
@@ -139,6 +143,13 @@ But the model did not solve the problem of good prediction effect at isite level
 The reason lies in two points. The first method of artificially segmenting the gene sequence introduces noise, and the second model is unreasonable in the process of judging the sample label (in vivo, only combining with an accurate position can lead to gene down-regulation)
 
 In addition, there is room for improvement in the construction of the model. The first is input. The sine and cosine information added to the Transformer can distinguish the same nucleotide in different positions, but it lacks the distinction between miRNA and mRNA.
+
+----
+New addition:
+The current model is stable and accurate in different metric
+The ablation experiments proved that 1. Compared with the single model, the mixed model improved the accuracy of the model; 2. The position of the labeling padding had no significant effect on the model; 3. The model learned was mainly based on the miRNA sequence to judge Whether gene regulation is produced on the target gene
+According to case analysis. There must be noise or loss of potential sites in the process of manually filtering sequences.
+
 
 ## 6. discussion
  
